@@ -1,0 +1,198 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+body{
+    background:linear-gradient(45deg, #2de2e2, #8e2de8);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aviso-sucesso{
+    font-size: 25px;
+    font-weight: 900;
+    color: white;
+    
+
+}
+
+main.container{
+    background-color: white;
+    padding: 2rem;
+    min-width: 300px;
+    min-height: 400px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+main h2{
+    font-weight: 600;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+main h2::before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 25px;
+    bottom: 3px;
+    left: 0;
+    border-radius: 8px;
+    background:linear-gradient(45deg,#8e2de8, #2de2e2);
+}
+
+form{
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field{
+    position: relative;
+}
+
+form .input-field:first-child{
+    margin-bottom: 1.8rem;
+}
+
+.input-field .underline::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background-color: rgba(2, 2, 2, 0.2);
+}
+
+.input-field .underline::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background:linear-gradient(45deg,#8e2de8, #2de2e2);
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+.input-field input:focus ~ .underline::after{
+    transform: scaleX(1);
+}
+
+.input-field input{
+    outline: none;
+    font-size: 0.9rem;
+    color: black;
+}
+
+.input-field input::placeholder{
+    color: rgb(178, 177, 179, 0.9);
+    font-size: 1rem;
+}
+
+
+
+form input[type="submit"]{
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background:linear-gradient(to left,#8e2de8, #2de2e2);
+    cursor: pointer;
+    margin-top: 2rem;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: all 0.5s ease;
+}
+
+form input[type="submit"]:hover{
+    letter-spacing: 15px;
+}
+
+.mensagem{
+    width: 300px;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.footer span{
+    color: rgba(0, 0, 0, 0.5) ;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1.3rem;
+    margin-top: 0.5rem;
+}
+
+.rede-facebook{
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    text-align: left;
+    display: flex;
+    padding: 0.5rem;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.rede-facebook img{
+    width: 22px;
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+}
+
+.rede-linkedin img {
+    width: 22px;
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+    
+}
+
+.rede-social p {
+    align-items: center;
+    text-align: center;
+    display: flex;
+
+}
+
+.rede-linkedin{
+    background: linear-gradient(to right, #56a7f2, #468aca);
+    text-align: left;
+    display: flex;
+    padding: 0.5rem;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.footer .rede-social{
+    padding: 0.4rem;
+    border-radius: 4px;
+    font-size: .8rem;
+    width: 100%;
+    cursor: pointer;
+}
+
+.footer .rede-social a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: contents;
+}

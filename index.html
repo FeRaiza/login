@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>Login</title>
+</head>
+<body>
+    <div class="aviso-sucesso"></div>
+    <main class="container">
+        <h2>Login</h2>
+        <form action="" id="dados" method="post">
+            <div class="input-field">
+                <input type="text" required name="username" maxlength="10"  id="username" placeholder="Digite seu nome" required>
+                <div class="underline"></div>
+            </div>
+            <div class="input-field">
+                <input type="password" required name="password" maxlength="10" id="password" placeholder="Digite a sua senha" required>
+                <div class="underline"></div>
+            </div>
+            <input type="submit" value="continue" id="btn-submit">
+        </form>
+        <div class="mensagem"></div>
+        <div class="footer">
+            <span>Ou conecte com sua rede social</span>
+            <div class="rede-social">
+                <div class="rede-facebook">
+                    <a href="https://www.facebook.com/fernanda.raiza.9/" target="_blanck" >
+                        <img src="/img/facebook (3).svg" alt="" class="facebook">
+                        Entre com o Facebook    
+                </div>
+                <div class="rede-linkedin">
+                    <a href="https://www.linkedin.com/in/fernanda-raiza-cs/" target="_blank" >
+                        <img src="/img/linkedin (2).svg" alt="">
+                         <p>Entre com o LinkedIn</p>  
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="js.js"></script>
+</html>
